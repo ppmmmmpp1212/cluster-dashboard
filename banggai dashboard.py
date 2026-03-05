@@ -12,6 +12,7 @@ def run_app():
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/a83b2cc3-b544-4af4-aa1f-69c855927bf3/page/YzMZE",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
         "SF KPI Monioring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd",
+        "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/1a96ee0a-4ae7-44ec-885b-d91bea2126ab/page/p_k6il67mwnd"
         "Sales Analysis": "https://lookerstudio.google.com/embed/reporting/ddb47467-7f78-41a1-b14e-53f9d8ba83f9/page/3pUkF"
     }
 
@@ -21,7 +22,7 @@ def run_app():
             menu_title="Main Menu",
             options=["Banggai POS Dash", "Stock Monitoring", "NGRS Monitoring", "SF KPI Monioring", "Sales Analysis"],
             # Ikon disesuaikan menggunakan icon bootstrap
-            icons=["bar-chart-line", "box-seam", "activity", "speedometer2", "graph-up-arrow"], 
+            icons=["bar-chart-line", "box-seam", "activity", "speedometer2", "speedometer2", "graph-up-arrow"], 
             menu_icon="cast",
             default_index=0,
             styles={
@@ -58,6 +59,7 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
+
 
 
 
