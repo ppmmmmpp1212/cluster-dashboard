@@ -20,7 +20,7 @@ def run_app():
     with st.sidebar:
         selected = option_menu(
             menu_title="Main Menu",
-            options=["Banggai POS Dash", "Stock Monitoring", "NGRS Monitoring", "SF KPI Monioring", "Sales Analysis"],
+            options=["Banggai POS Dash", "Stock Monitoring", "NGRS Monitoring", "SF KPI Monioring", "Direct Sales Monitoring", "Sales Analysis"],
             # Ikon disesuaikan menggunakan icon bootstrap
             icons=["bar-chart-line", "box-seam", "activity", "speedometer2", "speedometer2", "graph-up-arrow"], 
             menu_icon="cast",
@@ -59,6 +59,7 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
+
 
 
 
