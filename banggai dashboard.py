@@ -36,7 +36,7 @@ def run_app():
         )
 
     # Menampilkan judul sesuai menu yang dipilih
-    st.markdown("---")
+  
 
     # Logika render iframe (cukup satu blok kode ini saja yang berjalan dinamis mengikuti menu)
     iframe_code = f"""
@@ -56,4 +56,5 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
+
 
