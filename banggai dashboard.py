@@ -10,16 +10,17 @@ def run_app():
     dashboards = {
         "Banggai POS Dash": "https://lookerstudio.google.com/embed/reporting/cdd758c1-6ed9-464e-8f08-ea2c65b9d3a7/page/p_k6il67mwnd",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/a83b2cc3-b544-4af4-aa1f-69c855927bf3/page/YzMZE",
-        "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF"
+        "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
+        "SF KPI Monioring: "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd"
     }
 
     # Menu sidebar menggunakan streamlit-option-menu
     with st.sidebar:
         selected = option_menu(
             menu_title="Main Menu",
-            options=["Banggai POS Dash", "Stock Monitoring", "NGRS Monitoring"],
+            options=["Banggai POS Dash", "Stock Monitoring", "NGRS Monitoring", "SF KPI Monioring"],
             # Ikon disesuaikan menggunakan icon bootstrap
-            icons=["bar-chart-line", "box-seam", "activity"], 
+            icons=["bar-chart-line", "box-seam", "activity", "speedometer2"], 
             menu_icon="cast",
             default_index=0,
             styles={
@@ -56,5 +57,6 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
+
 
 
