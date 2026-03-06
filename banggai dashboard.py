@@ -16,13 +16,28 @@ def run_app():
         "Sales Analysis": "https://lookerstudio.google.com/embed/reporting/ddb47467-7f78-41a1-b14e-53f9d8ba83f9/page/3pUkF"
     }
 
-    # Menu sidebar menggunakan streamlit-option-menu
+# Menu sidebar menggunakan streamlit-option-menu
     with st.sidebar:
         selected = option_menu(
             menu_title="Main Menu",
-            options=["Banggai POS Dash", "Stock Monitoring", "NGRS Monitoring", "SF KPI Monioring", "Direct Sales Monitoring", "Sales Analysis"],
-            # Ikon disesuaikan menggunakan icon bootstrap
-            icons=["bar-chart-line", "box-seam", "activity", "speedometer2", "speedometer2", "graph-up-arrow"], 
+            # Urutan baru: Sales Analysis, POS, Stock, NGRS, SF KPI, Direct Sales
+            options=[
+                "Sales Analysis", 
+                "Banggai POS Dash", 
+                "Stock Monitoring", 
+                "NGRS Monitoring", 
+                "SF KPI Monitoring", 
+                "Direct Sales Monitoring"
+            ],
+            # Ikon disesuaikan dengan urutan baru
+            icons=[
+                "graph-up-arrow", # Sales Analysis
+                "bar-chart-line", # POS
+                "box-seam",       # Stock
+                "activity",       # NGRS
+                "speedometer2",   # SF KPI
+                "speedometer2"    # Direct Sales
+            ], 
             menu_icon="cast",
             default_index=0,
             styles={
@@ -37,8 +52,6 @@ def run_app():
                 "nav-link-selected": {"background-color": "#02ab21"},
             },
         )
-
-    # Menampilkan judul sesuai menu yang dipilih
   
 
     # Logika render iframe (cukup satu blok kode ini saja yang berjalan dinamis mengikuti menu)
@@ -59,6 +72,7 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
+
 
 
 
