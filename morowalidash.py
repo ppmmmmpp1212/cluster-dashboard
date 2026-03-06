@@ -11,7 +11,7 @@ def run_app():
         "Morowali POS Dash": "https://lookerstudio.google.com/embed/reporting/00eae712-7276-480b-810c-72c3c0bc4d8a/page/p_k6il67mwnd",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/bcfbbc98-72d5-4c0b-ba9d-dbf1b4525fa9/page/p_kuu3aq0urd",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/5465fcc0-89f8-48cb-a204-d0b975c8df8b/page/RAUQF",
-        "SF KPI Monioring": "https://lookerstudio.google.com/embed/reporting/2cf63382-7bc8-4c20-857b-7c55aa6e5c3b/page/p_k6il67mwnd",
+        "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/2cf63382-7bc8-4c20-857b-7c55aa6e5c3b/page/p_k6il67mwnd",
         "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/590d91ca-aac9-4431-8b4f-c443921e289b/page/p_k6il67mwnd",
         "Sales Analysis": "https://lookerstudio.google.com/embed/reporting/67eae6bf-32bc-4453-bef4-b13be5570d64/page/3pUkF"
     }
