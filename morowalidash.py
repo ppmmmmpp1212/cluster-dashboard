@@ -23,7 +23,7 @@ def run_app():
             # Urutan baru: Sales Analysis, POS, Stock, NGRS, SF KPI, Direct Sales
             options=[
                 "Sales Analysis", 
-                "Banggai POS Dash", 
+                "Morowali POS Dash", 
                 "Stock Monitoring", 
                 "NGRS Monitoring", 
                 "SF KPI Monitoring", 
