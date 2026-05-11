@@ -57,11 +57,17 @@ def run_app():
 
 # Menu sidebar menggunakan streamlit-option-menu
     with st.sidebar:
-        # Tambahan: Header Sidebar Kustom
+        # Tambahan: Header Sidebar Kustom dengan Logo
+        # Menampilkan gambar logo.png yang diletakkan di folder yang sama
+        try:
+            st.image("logo.png", use_container_width=True)
+        except Exception as e:
+            # Teks cadangan jika gambar belum diupload/tidak terbaca
+            st.warning("Gambar logo.png tidak ditemukan. Pastikan file ada di folder yang sama dengan app.py")
+        
         st.markdown(
             """
             <div style="text-align: center; margin-bottom: 20px;">
-                <h2 style="color: #d32f2f; margin: 0; font-weight: 800; font-size: 24px;">PORTAL</h2>
                 <p style="color: #999999; margin: 0; font-size: 14px; font-weight: 600;">DASHBOARD SYSTEM</p>
             </div>
             """, 
