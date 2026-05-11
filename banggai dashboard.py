@@ -47,23 +47,23 @@ def run_app():
     # Dictionary berisi link Looker Studio (Isi link URL Anda di sini)
     # Dictionary berisi link Looker Studio
     dashboards = {
-        "Banggai POS Dash": "https://lookerstudio.google.com/embed/reporting/cdd758c1-6ed9-464e-8f08-ea2c65b9d3a7/page/p_k6il67mwnd",
-        "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/a83b2cc3-b544-4af4-aa1f-69c855927bf3/page/YzMZE",
-        "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
-        "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd",
-        "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/1a96ee0a-4ae7-44ec-885b-d91bea2126ab/page/p_k6il67mwnd",
-        "Sales Analysis": "https://lookerstudio.google.com/embed/reporting/ddb47467-7f78-41a1-b14e-53f9d8ba83f9/page/3pUkF"
+        "Banggai POS Dash": "MASUKKAN LINK LOOKER BANGGAI POS DISINI",
+        "Stock Monitoring": "MASUKKAN LINK LOOKER STOCK MONITORING DISINI",
+        "NGRS Monitoring": "MASUKKAN LINK LOOKER NGRS DISINI",
+        "SF KPI Monitoring": "MASUKKAN LINK LOOKER SF KPI DISINI",
+        "Direct Sales Monitoring": "MASUKKAN LINK LOOKER DIRECT SALES DISINI",
+        "Sales Analysis": "MASUKKAN LINK LOOKER SALES ANALYSIS DISINI"
     }
 
 # Menu sidebar menggunakan streamlit-option-menu
     with st.sidebar:
         # Tambahan: Header Sidebar Kustom dengan Logo
-        # Menampilkan gambar logo.png yang diletakkan di folder yang sama
+        # Menampilkan gambar sesuai dengan nama file yang ada di GitHub Anda
         try:
-            st.image("logo.png", use_container_width=True)
+            st.image("Logo.new.png", use_container_width=True)
         except Exception as e:
             # Teks cadangan jika gambar belum diupload/tidak terbaca
-            st.warning("Gambar logo.png tidak ditemukan. Pastikan file ada di folder yang sama dengan app.py")
+            st.warning("Gambar Logo.new.png tidak ditemukan. Pastikan nama file sama persis (perhatikan huruf besar/kecil).")
         
         st.markdown(
             """
