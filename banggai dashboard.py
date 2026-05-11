@@ -65,7 +65,7 @@ def run_app():
             col1, col2, col3 = st.columns([1, 3, 1])
             with col2:
                 # Gambar dimasukkan ke kolom tengah (col2) agar rata tengah otomatis
-                st.image("Logo.new.png", width=700 !important)
+                st.image("Logo.new.png", width=700)
         except Exception as e:
             # Teks cadangan jika gambar belum diupload/tidak terbaca
             st.warning("Gambar Logo.new.png tidak ditemukan. Pastikan nama file sama persis (perhatikan huruf besar/kecil).")
