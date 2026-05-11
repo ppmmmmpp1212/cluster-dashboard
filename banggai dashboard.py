@@ -59,9 +59,13 @@ def run_app():
 # Menu sidebar menggunakan streamlit-option-menu
     with st.sidebar:
         # Tambahan: Header Sidebar Kustom dengan Logo
-        # Menampilkan gambar sesuai dengan nama file yang ada di GitHub Anda
         try:
-            st.image("Logo.new.png", width=100)
+            # Membuat 3 kolom pembantu untuk mengatur posisi gambar di tengah (center alignment)
+            # Rasio [1, 3, 1] artinya kolom tengah lebih lebar dari kolom pinggir
+            col1, col2, col3 = st.columns([1, 3, 1])
+            with col2:
+                # Gambar dimasukkan ke kolom tengah (col2) agar rata tengah otomatis
+                st.image("Logo.new.png", width=180)
         except Exception as e:
             # Teks cadangan jika gambar belum diupload/tidak terbaca
             st.warning("Gambar Logo.new.png tidak ditemukan. Pastikan nama file sama persis (perhatikan huruf besar/kecil).")
