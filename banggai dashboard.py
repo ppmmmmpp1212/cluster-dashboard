@@ -36,7 +36,7 @@ def run_app():
             .custom-title {
                 color: #d32f2f; /* Aksen MERAH pada judul */
                 font-weight: 700;
-                font-size: 40px !important;
+                font-size: 20px !important;
                 margin-bottom: 0px;
                 border-bottom: 2px solid #999999; /* Garis bawah ABU-ABU */
                 padding-bottom: 10px;
