@@ -61,7 +61,7 @@ def run_app():
         # Tambahan: Header Sidebar Kustom dengan Logo
         # Menampilkan gambar sesuai dengan nama file yang ada di GitHub Anda
         try:
-            st.image("Logo.new.png", uwidth=100)
+            st.image("Logo.new.png", width=100)
         except Exception as e:
             # Teks cadangan jika gambar belum diupload/tidak terbaca
             st.warning("Gambar Logo.new.png tidak ditemukan. Pastikan nama file sama persis (perhatikan huruf besar/kecil).")
