@@ -8,12 +8,12 @@ def run_app():
 
     # Dictionary berisi link Looker Studio
     dashboards = {
-        "PKY POS Dash": "https://datastudio.google.com/embed/reporting/a7fb74de-4615-4dae-843d-8198ebd302a6/page/p_c1xa12xg3d",
+        "PKY POS Dash": "https://datastudio.google.com/embed/reporting/a8c11bde-20d3-4d4d-bb21-a46e7d403d87/page/p_k6il67mwnd",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/72b16012-c08e-41c1-a07c-348e300a1ec0/page/p_1hrrmq0urd",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/a3fdc1a6-9b86-4dee-bb3a-f3ecefcc7aa0/page/RAUQF",
         "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/09c32b56-e050-4ef0-aeca-bcfcc4ad44f1/page/p_k6il67mwnd",
         "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/cdf2c050-22e2-4900-b0e5-0ab86e2f9244/page/p_k6il67mwnd",
-        "Sales Analysis": "https://lookerstudio.google.com/embed/reporting/de860bdd-d36b-483e-a6a3-0ced9a502490/page/3pUkF"
+        "Sales Analysis": "https://datastudio.google.com/embed/reporting/a7fb74de-4615-4dae-843d-8198ebd302a6/page/p_c1xa12xg3d"
     }
 
 # Menu sidebar menggunakan streamlit-option-menu
