@@ -13,7 +13,7 @@ def run_app():
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/5465fcc0-89f8-48cb-a204-d0b975c8df8b/page/RAUQF",
         "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/2cf63382-7bc8-4c20-857b-7c55aa6e5c3b/page/p_k6il67mwnd",
         "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/590d91ca-aac9-4431-8b4f-c443921e289b/page/p_k6il67mwnd",
-        "Sales Analysis": "https://lookerstudio.google.com/embed/reporting/67eae6bf-32bc-4453-bef4-b13be5570d64/page/3pUkF"
+        "Sales Analysis": "https://datastudio.google.com/embed/reporting/509e29f4-5e27-41ac-ab79-1306a84cca31/page/p_c1xa12xg3d"
     }
 
 # Menu sidebar menggunakan streamlit-option-menu
