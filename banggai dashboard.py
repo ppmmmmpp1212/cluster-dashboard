@@ -52,7 +52,7 @@ def run_app():
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
         "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd",
         "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/1a96ee0a-4ae7-44ec-885b-d91bea2126ab/page/p_k6il67mwnd",
-        "Sales Analysis": "https://lookerstudio.google.com/embed/reporting/ddb47467-7f78-41a1-b14e-53f9d8ba83f9/page/3pUkF"
+        "Sales Analysis": "https://datastudio.google.com/embed/reporting/ad4aa17a-d623-4291-b836-de0adb7317fd/page/p_c1xa12xg3d"
     }
 
 
