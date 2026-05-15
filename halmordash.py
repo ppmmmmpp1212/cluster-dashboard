@@ -46,7 +46,7 @@ def run_app():
 
     # Dictionary berisi link Looker Studio
     dashboards = {
-        "HALMOR POS Dash": "https://lookerstudio.google.com/embed/reporting/60f10d03-cf06-4d1e-9979-3e868ef87019/page/p_k6il67mwnd",
+        "POS Dashboard": "https://lookerstudio.google.com/embed/reporting/60f10d03-cf06-4d1e-9979-3e868ef87019/page/p_k6il67mwnd",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/8a25d8b8-c6e6-4751-ab10-9b7b9dfa8a09/page/p_6hzriq0urd",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/5187caa9-adac-43b6-896c-96b975d30efb/page/RAUQF",
         "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/e151cd8f-fcb1-415a-b141-5173fdbaa9e5/page/p_k6il67mwnd",
@@ -82,7 +82,7 @@ def run_app():
             # Urutan baru: Sales Analysis, POS, Stock, NGRS, SF KPI, Direct Sales
             options=[
                 "Sales Analysis", 
-                "Halmahera Morotai POS Dash", 
+                "POS Dashboard", 
                 "Stock Monitoring", 
                 "NGRS Monitoring", 
                 "SF KPI Monitoring", 
