@@ -47,7 +47,7 @@ def run_app():
     # Dictionary berisi link Looker Studio (Isi link URL Anda di sini)
     # Dictionary berisi link Looker Studio
     dashboards = {
-        "Banggai POS Dash": "https://lookerstudio.google.com/embed/reporting/cdd758c1-6ed9-464e-8f08-ea2c65b9d3a7/page/p_k6il67mwnd",
+        "POS Dashboard": "https://lookerstudio.google.com/embed/reporting/cdd758c1-6ed9-464e-8f08-ea2c65b9d3a7/page/p_k6il67mwnd",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/a83b2cc3-b544-4af4-aa1f-69c855927bf3/page/YzMZE",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
         "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd",
@@ -84,7 +84,7 @@ def run_app():
             # Urutan baru: Sales Analysis, POS, Stock, NGRS, SF KPI, Direct Sales
             options=[
                 "Sales Analysis", 
-                "Banggai POS Dash", 
+                "POS Dashboard", 
                 "Stock Monitoring", 
                 "NGRS Monitoring", 
                 "SF KPI Monitoring", 
