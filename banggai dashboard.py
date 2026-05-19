@@ -26,6 +26,14 @@ def run_app():
                 border-right: 1px solid #999999; /* Batas abu-abu palet */
             }
 
+            /* Membuat background header transparan agar tombol panah tetap terlihat */
+            [data-testid="stHeader"] {
+                background-color: transparent;
+            }
+            
+            /* Menyembunyikan menu hamburger (titik tiga) di kanan atas agar bersih */
+            #MainMenu {visibility: hidden;}
+
             .block-container {
                 padding-top: 1rem;
             }
@@ -42,7 +50,6 @@ def run_app():
         </style>
     """, unsafe_allow_html=True)
 
-    # Dictionary berisi link Looker Studio (Isi link URL Anda di sini)
     # Dictionary berisi link Looker Studio
     dashboards = {
         "POS Dashboard": "https://lookerstudio.google.com/embed/reporting/cdd758c1-6ed9-464e-8f08-ea2c65b9d3a7/page/p_k6il67mwnd",
@@ -53,20 +60,18 @@ def run_app():
         "Sales Analysis": "https://datastudio.google.com/embed/reporting/a41e0a5d-c5dd-4c94-98f0-cb7609f94a00/page/p_c1xa12xg3d"
     }
 
-
-# Menu sidebar menggunakan streamlit-option-menu
+    # Menu sidebar menggunakan streamlit-option-menu
     with st.sidebar:
         # Tambahan: Header Sidebar Kustom dengan Logo
         try:
             # Membuat 3 kolom pembantu untuk mengatur posisi gambar di tengah (center alignment)
-            # Rasio [1, 3, 1] artinya kolom tengah lebih lebar dari kolom pinggir
             col1, col2, col3 = st.columns([1, 3, 1])
             with col2:
                 # Gambar dimasukkan ke kolom tengah (col2) agar rata tengah otomatis
                 st.image("Logo.new.png", width=700)
         except Exception as e:
             # Teks cadangan jika gambar belum diupload/tidak terbaca
-            st.warning("Gambar Logo.new.png tidak ditemukan. Pastikan nama file sama persis (perhatikan huruf besar/kecil).")
+            st.warning("Gambar Logo.new.png tidak ditemukan. Pastikan nama file sama persis.")
         
         st.markdown(
             """
@@ -78,8 +83,7 @@ def run_app():
         )
 
         selected = option_menu(
-            menu_title=None, # Dihilangkan karena sudah pakai header custom di atas
-            # Urutan baru: Sales Analysis, POS, Stock, NGRS, SF KPI, Direct Sales
+            menu_title=None, 
             options=[
                 "Sales Analysis", 
                 "POS Dashboard", 
@@ -88,24 +92,23 @@ def run_app():
                 "SF KPI Monitoring", 
                 "Direct Sales Monitoring"
             ],
-            # Ikon disesuaikan dengan urutan baru
             icons=[
                 "graph-up-arrow", # Sales Analysis
                 "bar-chart-line", # POS
                 "box-seam",       # Stock
                 "activity",       # NGRS
                 "speedometer2",   # SF KPI
-                "briefcase"       # Direct Sales (Diubah sedikit dari speedometer agar beda)
+                "briefcase"       # Direct Sales
             ], 
             menu_icon="cast",
             default_index=0,
             styles={
                 "container": {
                     "padding": "0!important", 
-                    "background-color": "transparent" # Mengikuti warna bg sidebar dari CSS
+                    "background-color": "transparent" 
                 },
                 "icon": {
-                    "color": "#999999", # Ikon warna ABU-ABU palet
+                    "color": "#999999", 
                     "font-size": "18px"
                 },
                 "nav-link": {
@@ -118,8 +121,8 @@ def run_app():
                     "border-radius": "8px"
                 },
                 "nav-link-selected": {
-                    "background-color": "#d32f2f", # Menu aktif warna MERAH palet
-                    "color": "#ffffff", # Teks PUTIH saat aktif
+                    "background-color": "#d32f2f", 
+                    "color": "#ffffff", 
                     "font-weight": "bold"
                 },
             },
@@ -127,9 +130,9 @@ def run_app():
   
     # Menampilkan Judul di area utama sesuai menu yang dipilih
     st.markdown(f'<h1 class="custom-title">{selected}</h1>', unsafe_allow_html=True)
-    st.markdown("<br>", unsafe_allow_html=True) # Spasi
+    st.markdown("<br>", unsafe_allow_html=True) 
 
-    # Logika render iframe (cukup satu blok kode ini saja yang berjalan dinamis mengikuti menu)
+    # Logika render iframe 
     iframe_code = f"""
         <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #999999;">
             <iframe 
@@ -145,7 +148,7 @@ def run_app():
     """
     
     # Menampilkan iframe di Streamlit
-    components.html(iframe_code, height=860) # height ditambah sedikit untuk mengakomodasi box-shadow
+    components.html(iframe_code, height=860) 
 
 if __name__ == "__main__":
     run_app()
