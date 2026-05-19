@@ -26,8 +26,14 @@ def run_app():
                 border-right: 1px solid #999999; /* Batas abu-abu palet */
             }
 
-            /* Menyembunyikan header default Streamlit agar lebih bersih */
-            header {visibility: hidden;}
+            /* Membuat background header transparan agar tombol panah tetap terlihat */
+            [data-testid="stHeader"] {
+                background-color: transparent;
+            }
+            
+            /* Menyembunyikan menu hamburger (titik tiga) di kanan atas agar bersih */
+            #MainMenu {visibility: hidden;}
+
             .block-container {
                 padding-top: 1rem;
             }
