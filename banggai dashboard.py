@@ -26,8 +26,6 @@ def run_app():
                 border-right: 1px solid #999999; /* Batas abu-abu palet */
             }
 
-            /* Menyembunyikan header default Streamlit agar lebih bersih */
-            header {visibility: hidden;}
             .block-container {
                 padding-top: 1rem;
             }
