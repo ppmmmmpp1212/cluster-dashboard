@@ -51,12 +51,12 @@ def run_app():
     """, unsafe_allow_html=True)
     
     # Dictionary berisi link Looker Studio
+    # Perubahan: menu KPI sales dibuat menjadi satu menu Sales KPI Monitoring
     dashboards = {
         "POS Dashboard": "https://lookerstudio.google.com/embed/reporting/60f10d03-cf06-4d1e-9979-3e868ef87019/page/p_k6il67mwnd",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/8a25d8b8-c6e6-4751-ab10-9b7b9dfa8a09/page/p_6hzriq0urd",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/5187caa9-adac-43b6-896c-96b975d30efb/page/RAUQF",
-        "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/e151cd8f-fcb1-415a-b141-5173fdbaa9e5/page/p_k6il67mwnd",
-        "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/d521a12f-2067-4969-a16a-e7fa06accca1/page/p_k6il67mwnd",
+        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/e151cd8f-fcb1-415a-b141-5173fdbaa9e5/page/p_k6il67mwnd",
         "Sales Analysis": "https://datastudio.google.com/embed/reporting/1a770106-c1b7-43b5-a85a-b1d1dc9e487a/page/p_c1xa12xg3d"
     }
 
@@ -85,14 +85,13 @@ def run_app():
 
         selected = option_menu(
             menu_title=None, # Dihilangkan karena sudah pakai header custom di atas
-            # Urutan baru: Sales Analysis, POS, Stock, NGRS, SF KPI, Direct Sales
+            # Urutan baru: Sales Analysis, POS, Stock, NGRS, Sales KPI
             options=[
                 "Sales Analysis", 
                 "POS Dashboard", 
                 "Stock Monitoring", 
                 "NGRS Monitoring", 
-                "SF KPI Monitoring", 
-                "Direct Sales Monitoring"
+                "Sales KPI Monitoring"
             ],
             # Ikon disesuaikan dengan urutan baru
             icons=[
@@ -100,8 +99,7 @@ def run_app():
                 "bar-chart-line", # POS
                 "box-seam",       # Stock
                 "activity",       # NGRS
-                "speedometer2",   # SF KPI
-                "briefcase"       # Direct Sales (Diubah sedikit dari speedometer agar beda)
+                "speedometer2"    # Sales KPI
             ], 
             menu_icon="cast",
             default_index=0,
