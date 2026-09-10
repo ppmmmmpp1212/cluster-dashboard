@@ -51,16 +51,16 @@ def run_app():
     """, unsafe_allow_html=True)
 
     # Dictionary berisi link Looker Studio
+    # Perubahan: menu KPI sales dibuat menjadi satu menu Sales KPI Monitoring
     dashboards = {
         "POS Dashboard": "https://datastudio.google.com/embed/reporting/a8c11bde-20d3-4d4d-bb21-a46e7d403d87/page/p_k6il67mwnd",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/72b16012-c08e-41c1-a07c-348e300a1ec0/page/p_1hrrmq0urd",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/a3fdc1a6-9b86-4dee-bb3a-f3ecefcc7aa0/page/RAUQF",
-        "SF KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/09c32b56-e050-4ef0-aeca-bcfcc4ad44f1/page/p_k6il67mwnd",
-        "Direct Sales Monitoring": "https://lookerstudio.google.com/embed/reporting/cdf2c050-22e2-4900-b0e5-0ab86e2f9244/page/p_k6il67mwnd",
+        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/09c32b56-e050-4ef0-aeca-bcfcc4ad44f1/page/p_k6il67mwnd",
         "Sales Analysis": "https://datastudio.google.com/embed/reporting/a7fb74de-4615-4dae-843d-8198ebd302a6/page/p_c1xa12xg3d"
     }
 
-# Menu sidebar menggunakan streamlit-option-menu
+    # Menu sidebar menggunakan streamlit-option-menu
     with st.sidebar:
         # Tambahan: Header Sidebar Kustom dengan Logo
         try:
@@ -85,14 +85,13 @@ def run_app():
 
         selected = option_menu(
             menu_title=None, # Dihilangkan karena sudah pakai header custom di atas
-            # Urutan baru: Sales Analysis, POS, Stock, NGRS, SF KPI, Direct Sales
+            # Urutan baru: Sales Analysis, POS, Stock, NGRS, Sales KPI
             options=[
                 "Sales Analysis", 
                 "POS Dashboard", 
                 "Stock Monitoring", 
                 "NGRS Monitoring", 
-                "SF KPI Monitoring", 
-                "Direct Sales Monitoring"
+                "Sales KPI Monitoring"
             ],
             # Ikon disesuaikan dengan urutan baru
             icons=[
@@ -100,8 +99,7 @@ def run_app():
                 "bar-chart-line", # POS
                 "box-seam",       # Stock
                 "activity",       # NGRS
-                "speedometer2",   # SF KPI
-                "briefcase"       # Direct Sales (Diubah sedikit dari speedometer agar beda)
+                "speedometer2"    # Sales KPI
             ], 
             menu_icon="cast",
             default_index=0,
@@ -155,11 +153,3 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
-
-
-
-
-
-
-
-
