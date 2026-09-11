@@ -51,13 +51,12 @@ def run_app():
     """, unsafe_allow_html=True)
 
     # Dictionary berisi link Looker Studio
-    # Perubahan: menu KPI sales dibuat menjadi satu menu Sales KPI Monitoring
+    # Perubahan: menu Sales Analysis digabung dengan POS dalam satu dashboard Looker
     dashboards = {
-        "POS Dashboard": "https://lookerstudio.google.com/embed/reporting/cdd758c1-6ed9-464e-8f08-ea2c65b9d3a7/page/p_k6il67mwnd",
+        "Sales Analysis dan POS": "https://datastudio.google.com/embed/reporting/a41e0a5d-c5dd-4c94-98f0-cb7609f94a00/page/p_c1xa12xg3d",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/a83b2cc3-b544-4af4-aa1f-69c855927bf3/page/YzMZE",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
-        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd",
-        "Sales Analysis": "https://datastudio.google.com/embed/reporting/a41e0a5d-c5dd-4c94-98f0-cb7609f94a00/page/p_c1xa12xg3d"
+        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd"
     }
 
     # Menu sidebar menggunakan streamlit-option-menu
@@ -85,15 +84,13 @@ def run_app():
         selected = option_menu(
             menu_title=None, 
             options=[
-                "Sales Analysis", 
-                "POS Dashboard", 
+                "Sales Analysis dan POS", 
                 "Stock Monitoring", 
                 "NGRS Monitoring", 
                 "Sales KPI Monitoring"
             ],
             icons=[
-                "graph-up-arrow", # Sales Analysis
-                "bar-chart-line", # POS
+                "graph-up-arrow", # Sales Analysis dan POS
                 "box-seam",       # Stock
                 "activity",       # NGRS
                 "speedometer2"    # Sales KPI
