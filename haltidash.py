@@ -52,13 +52,12 @@ def run_app():
 
 
     # Dictionary berisi link Looker Studio
-    # Perubahan: menu KPI sales dibuat menjadi satu menu Sales KPI Monitoring
+    # Perubahan: menu Sales Analysis dan POS dibuat menjadi satu menu
     dashboards = {
-        "POS Dashboard": "https://lookerstudio.google.com/embed/reporting/8c1e5f22-608a-4f73-880e-afb950894780/page/p_k6il67mwnd",
+        "Sales Analysis dan POS": "https://datastudio.google.com/embed/reporting/e73bc6b3-166b-4c47-913b-b9ae890df48f/page/p_c1xa12xg3d",
         "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/6d25ce8f-3bdc-4d05-912c-497d9269cbb3/page/p_96pfhq0urd",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/4098e34d-e267-40a8-b617-5bb5f6006447/page/RAUQF",
-        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/767014ae-1f57-4935-bb59-141ba8a9292d/page/p_k6il67mwnd",
-        "Sales Analysis": "https://datastudio.google.com/embed/reporting/e73bc6b3-166b-4c47-913b-b9ae890df48f/page/p_c1xa12xg3d"
+        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/767014ae-1f57-4935-bb59-141ba8a9292d/page/p_k6il67mwnd"
     }
 
 # Menu sidebar menggunakan streamlit-option-menu
@@ -86,18 +85,16 @@ def run_app():
 
         selected = option_menu(
             menu_title=None, # Dihilangkan karena sudah pakai header custom di atas
-            # Urutan baru: Sales Analysis, POS, Stock, NGRS, Sales KPI
+            # Urutan baru: Sales Analysis dan POS, Stock, NGRS, Sales KPI
             options=[
-                "Sales Analysis", 
-                "POS Dashboard", 
-                "Stock Monitoring", 
-                "NGRS Monitoring", 
+                "Sales Analysis dan POS",
+                "Stock Monitoring",
+                "NGRS Monitoring",
                 "Sales KPI Monitoring"
             ],
             # Ikon disesuaikan dengan urutan baru
             icons=[
-                "graph-up-arrow", # Sales Analysis
-                "bar-chart-line", # POS
+                "graph-up-arrow", # Sales Analysis dan POS
                 "box-seam",       # Stock
                 "activity",       # NGRS
                 "speedometer2"    # Sales KPI
