@@ -51,10 +51,9 @@ def run_app():
     """, unsafe_allow_html=True)
 
     # Dictionary berisi link Looker Studio
-    # Perubahan: menu Sales Analysis digabung dengan POS dalam satu dashboard Looker
+    # Perubahan: menu Stock Monitoring dihilangkan, menu Sales diganti menjadi Sales & Stock Monitoring
     dashboards = {
-        "Sales Analysis dan POS": "https://datastudio.google.com/embed/reporting/a41e0a5d-c5dd-4c94-98f0-cb7609f94a00/page/p_c1xa12xg3d",
-        "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/a83b2cc3-b544-4af4-aa1f-69c855927bf3/page/YzMZE",
+        "Sales & Stock Monitoring": "https://datastudio.google.com/embed/reporting/a41e0a5d-c5dd-4c94-98f0-cb7609f94a00/page/p_c1xa12xg3d",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
         "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd"
     }
@@ -84,14 +83,12 @@ def run_app():
         selected = option_menu(
             menu_title=None, 
             options=[
-                "Sales Analysis dan POS", 
-                "Stock Monitoring", 
+                "Sales & Stock Monitoring", 
                 "NGRS Monitoring", 
                 "Sales KPI Monitoring"
             ],
             icons=[
-                "graph-up-arrow", # Sales Analysis dan POS
-                "box-seam",       # Stock
+                "graph-up-arrow", # Sales & Stock Monitoring
                 "activity",       # NGRS
                 "speedometer2"    # Sales KPI
             ], 
