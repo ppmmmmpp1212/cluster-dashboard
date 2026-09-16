@@ -51,10 +51,9 @@ def run_app():
     """, unsafe_allow_html=True)
 
     # Dictionary berisi link Looker Studio
-    # Perubahan: menu Sales Analysis dan POS dibuat menjadi satu menu
+    # Perubahan: menu Stock Monitoring dihilangkan, menu Sales diganti menjadi Sales & Stock Monitoring
     dashboards = {
-        "Sales Analysis dan POS": "https://datastudio.google.com/embed/reporting/0513f0b1-99f4-4c98-a7cd-c53966c3190d/page/p_c1xa12xg3d",
-        "Stock Monitoring": "https://lookerstudio.google.com/embed/reporting/45cde8f8-4350-45cb-bd7f-6ceb211365de/page/p_zhrpkq0urd",
+        "Sales & Stock Monitoring": "https://datastudio.google.com/embed/reporting/0513f0b1-99f4-4c98-a7cd-c53966c3190d/page/p_c1xa12xg3d",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7fbe8c25-afee-4cbb-b022-7bf9b951c23c/page/RAUQF",
         "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/f68b6a7d-b1c2-4d4a-bc77-bc3a4a43821a/page/p_k6il67mwnd"
     }
@@ -84,17 +83,15 @@ def run_app():
 
         selected = option_menu(
             menu_title=None, # Dihilangkan karena sudah pakai header custom di atas
-            # Urutan baru: Sales Analysis dan POS, Stock, NGRS, Sales KPI
+            # Urutan baru: Sales & Stock Monitoring, NGRS, Sales KPI
             options=[
-                "Sales Analysis dan POS",
-                "Stock Monitoring",
+                "Sales & Stock Monitoring",
                 "NGRS Monitoring",
                 "Sales KPI Monitoring"
             ],
             # Ikon disesuaikan dengan urutan baru
             icons=[
-                "graph-up-arrow", # Sales Analysis dan POS
-                "box-seam",       # Stock
+                "graph-up-arrow", # Sales & Stock Monitoring
                 "activity",       # NGRS
                 "speedometer2"    # Sales KPI
             ], 
