@@ -53,7 +53,7 @@ def run_app():
     # Dictionary berisi link Looker Studio
     # Perubahan: menu Stock Monitoring dihilangkan, menu Sales diganti menjadi Sales dan Stock Monitoring
     dashboards = {
-        "Sales dan Stock Monitoring": "https://datastudio.google.com/embed/reporting/a7fb74de-4615-4dae-843d-8198ebd302a6/page/p_c1xa12xg3d",
+        "Sales & Stock Monitoring": "https://datastudio.google.com/embed/reporting/a7fb74de-4615-4dae-843d-8198ebd302a6/page/p_c1xa12xg3d",
         "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/a3fdc1a6-9b86-4dee-bb3a-f3ecefcc7aa0/page/RAUQF",
         "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/09c32b56-e050-4ef0-aeca-bcfcc4ad44f1/page/p_k6il67mwnd"
     }
