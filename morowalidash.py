@@ -51,11 +51,10 @@ def run_app():
     """, unsafe_allow_html=True)
 
     # Dictionary berisi link Looker Studio
-    # Perubahan: menu Stock Monitoring dihilangkan, menu Sales diganti menjadi Sales & Stock Monitoring
+    # Perubahan: menu Stock Monitoring dihilangkan, menu Sales diganti menjadi MRW Monitoring
     dashboards = {
-        "Sales & Stock Monitoring": "https://datastudio.google.com/embed/reporting/509e29f4-5e27-41ac-ab79-1306a84cca31/page/p_c1xa12xg3d",
-        "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/5465fcc0-89f8-48cb-a204-d0b975c8df8b/page/RAUQF",
-        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/2cf63382-7bc8-4c20-857b-7c55aa6e5c3b/page/p_k6il67mwnd"
+        "MRW Monitoring": "https://datastudio.google.com/embed/reporting/509e29f4-5e27-41ac-ab79-1306a84cca31/page/p_c1xa12xg3d",
+        "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/5465fcc0-89f8-48cb-a204-d0b975c8df8b/page/RAUQF"
     }
 
 # Menu sidebar menggunakan streamlit-option-menu
@@ -83,17 +82,15 @@ def run_app():
 
         selected = option_menu(
             menu_title=None, # Dihilangkan karena sudah pakai header custom di atas
-            # Urutan baru: Sales & Stock Monitoring, NGRS, Sales KPI
+            # Urutan baru: MRW Monitoring, NGRS
             options=[
-                "Sales & Stock Monitoring",
-                "NGRS Monitoring",
-                "Sales KPI Monitoring"
+                "MRW Monitoring",
+                "NGRS Monitoring"
             ],
             # Ikon disesuaikan dengan urutan baru
             icons=[
-                "graph-up-arrow", # Sales & Stock Monitoring
-                "activity",       # NGRS
-                "speedometer2"    # Sales KPI
+                "graph-up-arrow", # MRW Monitoring
+                "activity"        # NGRS
             ], 
             menu_icon="cast",
             default_index=0,
