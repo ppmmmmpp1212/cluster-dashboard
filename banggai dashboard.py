@@ -51,11 +51,10 @@ def run_app():
     """, unsafe_allow_html=True)
 
     # Dictionary berisi link Looker Studio
-    # Perubahan: menu Stock Monitoring dihilangkan, menu Sales diganti menjadi Sales & Stock Monitoring
+    # Perubahan: menu Stock Monitoring dihilangkan, menu Sales diganti menjadi BGI Monitoring
     dashboards = {
-        "Sales & Stock Monitoring": "https://datastudio.google.com/embed/reporting/a41e0a5d-c5dd-4c94-98f0-cb7609f94a00/page/p_c1xa12xg3d",
-        "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF",
-        "Sales KPI Monitoring": "https://lookerstudio.google.com/embed/reporting/7d238133-e1f5-4404-8f9e-88022ba8a6b5/page/p_k6il67mwnd"
+        "BGI Monitoring": "https://datastudio.google.com/embed/reporting/a41e0a5d-c5dd-4c94-98f0-cb7609f94a00/page/p_c1xa12xg3d",
+        "NGRS Monitoring": "https://lookerstudio.google.com/embed/reporting/7bee7469-1bba-4f25-8ddb-5db385ef8e59/page/RAUQF"
     }
 
     # Menu sidebar menggunakan streamlit-option-menu
@@ -83,14 +82,12 @@ def run_app():
         selected = option_menu(
             menu_title=None, 
             options=[
-                "Sales & Stock Monitoring", 
-                "NGRS Monitoring", 
-                "Sales KPI Monitoring"
+                "BGI Monitoring", 
+                "NGRS Monitoring"
             ],
             icons=[
-                "graph-up-arrow", # Sales & Stock Monitoring
-                "activity",       # NGRS
-                "speedometer2"    # Sales KPI
+                "graph-up-arrow", # BGI Monitoring
+                "activity"        # NGRS
             ], 
             menu_icon="cast",
             default_index=0,
